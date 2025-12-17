@@ -6,6 +6,6 @@ public class Receptionist extends Staff {
 
     @Override
     public void performDuties() {
-        System.out.println(name + " registers patients and schedules visits.");
+        System.out.println(getName() + " registers patients and schedules visits.");
     }
 }

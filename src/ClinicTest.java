@@ -34,7 +34,7 @@ public class ClinicTest {
 
         // Unique subclass methods
         System.out.println("\n=== Unique methods ===");
-        doc.prescribeMedicine("Paracetamol");
+        doc.prescribeMedicine(p1, "Paracetamol");
         nurse.checkVitals(p2);
     }
 }

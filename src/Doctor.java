@@ -10,8 +10,12 @@ public class Doctor extends Staff {
         System.out.println(getName() + " examines patients and makes diagnoses.");
     }
 
-    public void prescribeMedicine(String medicine) {
-        // Extra method for Doctor
-        System.out.println(getName() + " prescribes: " + medicine);
+    // Doctor unique method
+    public void prescribeMedicine(Patient patient, String medicine) {
+        if (patient == null) {
+            System.out.println(getName() + " cannot prescribe medicine (no patient).");
+            return;
+        }
+        System.out.println(getName() + " prescribes " + medicine + " to " + patient.getName() + ".");
     }
 }

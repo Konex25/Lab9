@@ -12,13 +12,15 @@ public class Patient extends Person implements Treatable {
 
     @Override
     public void receiveTreatment() {
-        // Very simple logic
-        if (condition.equalsIgnoreCase("flu")) {
-            System.out.println(name + " gets rest + fluids treatment.");
-        } else if (condition.equalsIgnoreCase("injury")) {
-            System.out.println(name + " gets wound care treatment.");
+        // Simple demo treatment based on condition
+        String cond = (condition == null) ? "" : condition;
+
+        if (cond.equalsIgnoreCase("flu")) {
+            System.out.println(getName() + " gets rest + fluids treatment.");
+        } else if (cond.equalsIgnoreCase("injury")) {
+            System.out.println(getName() + " gets wound care treatment.");
         } else {
-            System.out.println(name + " gets general consultation.");
+            System.out.println(getName() + " gets general consultation.");
         }
     }
 }

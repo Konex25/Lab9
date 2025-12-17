@@ -6,10 +6,12 @@ public class Doctor extends Staff {
 
     @Override
     public void performDuties() {
-        System.out.println(name + " examines patients and makes diagnoses.");
+        // Basic doctor duties
+        System.out.println(getName() + " examines patients and makes diagnoses.");
     }
 
     public void prescribeMedicine(String medicine) {
-        System.out.println(name + " prescribes: " + medicine);
+        // Extra method for Doctor
+        System.out.println(getName() + " prescribes: " + medicine);
     }
 }

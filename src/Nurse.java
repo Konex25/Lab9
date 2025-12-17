@@ -6,11 +6,16 @@ public class Nurse extends Staff {
 
     @Override
     public void performDuties() {
-        System.out.println(name + " supports doctor and cares for patients.");
+        // Basic nurse duties
+        System.out.println(getName() + " supports doctor and cares for patients.");
     }
 
     public void checkVitals(Patient patient) {
         // Fake vitals just for demo
-        System.out.println(name + " checks vitals of " + patient.name + " (OK).");
+        if (patient == null) {
+            System.out.println(getName() + " cannot check vitals (no patient).");
+            return;
+        }
+        System.out.println(getName() + " checks vitals of " + patient.getName() + " (OK).");
     }
 }

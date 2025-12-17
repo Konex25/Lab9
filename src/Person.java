@@ -9,6 +9,6 @@ public abstract class Person {
 
     // Simple intro
     public void introduce() {
-        System.out.println("Name: " + name + "Age: " + age + " years old.");
+        System.out.println("Name: " + name + " | Age: " + age + " years old.");
     }
 }
